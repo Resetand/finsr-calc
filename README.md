@@ -2,7 +2,7 @@
 
 Мини-приложение на vue для отображения кредитного калькулятора
 
-Исходный код лежит https://github.com/Resetand/finsr-calc/blob/master/src/components/MoneyInput.vue
+Исходный код лежит https://github.com/Resetand/finsr-calc
 
 ## Конфигурирование и использование
 
