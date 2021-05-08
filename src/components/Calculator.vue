@@ -60,6 +60,7 @@
                         :max="config.yearsMax"
                         height="3px"
                         marks
+                        silent
                         tooltip="always"
                         v-model="years"
                     />
