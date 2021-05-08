@@ -1,17 +1,1426 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+        <link rel="stylesheet" href="./assets/css/style.css?0-29-0" />
+        <link rel="stylesheet" href="./assets/css/media.css" />
+
+        <title><%= htmlWebpackPlugin.options.title %></title>
+    </head>
+    <body>
+        <!-- End Google Tag Manager (noscript) -->
+        <div id="p-mortgage" class="wr wr_all" itemscope="" itemtype="http://schema.org/LoanOrCredit">
+            <div id="p-incalc" class="wr wr33 p-incalc">
+                <div class="block">
+                    <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a href="https://finsr.ru/" itemprop="item"><span itemprop="name">Финансовый сервис</span></a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a href="https://finsr.ru/ipoteka" itemprop="item"><span itemprop="name">Ипотека</span></a>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                    </ul>
+
+                    <h1 class="title" itemprop="name">Кредитный калькулятор</h1>
+                    <div class="subtitle">Рассчитайте вашу экономию при получении кредита с нами</div>
+                    <div class="line"></div>
+
+                    <div id="credit-calc">
+                        <div
+                            data-name="Потребительский кредит"
+                            data-commission="10%"
+                            data-sum-min="500000"
+                            data-sum-max="5000000"
+                            data-years-min="1"
+                            data-years-max="5"
+                            data-rate="12,5%"
+                            data-rate-bank="19%"
+                            data-insurance="0"
+                            data-insurance-bank="9%"
+                            class="credit-calc-offer"
+                        ></div>
+
+                        <div
+                            data-name="Ипотека"
+                            data-commission="2%"
+                            data-categories-label="Вид недвижимости"
+                            data-years-min="5"
+                            data-years-max="30"
+                            data-years-step="5"
+                            data-sum-min="1000000"
+                            data-sum-max="100000000"
+                            class="credit-calc-offer"
+                        >
+                            <div
+                                data-name="Квартира"
+                                data-rate="9,2%"
+                                data-rate-bank="11,75%"
+                                data-insurance="0,5%"
+                                data-insurance-bank="0,8%"
+                                class="credit-calc-category"
+                            ></div>
+
+                            <div
+                                data-name="Дом"
+                                data-rate="8,2%"
+                                data-rate-bank="10,3%"
+                                data-insurance="0,5%"
+                                data-insurance-bank="0,8%"
+                                class="credit-calc-category"
+                            ></div>
+                            <div
+                                data-name="Земля"
+                                data-rate="8,5%"
+                                data-rate-bank="11,5%"
+                                data-insurance="0,2%"
+                                data-insurance-bank="0,4%"
+                                class="credit-calc-category"
+                            ></div>
+                            <div
+                                data-name="Коммерческая недвижимость"
+                                data-rate="8,2%"
+                                data-rate-bank="11,5%"
+                                data-insurance="0,65%"
+                                data-insurance-bank="1%"
+                                class="credit-calc-category"
+                            ></div>
+                        </div>
+
+                        <div
+                            data-name="Кредит под залог"
+                            data-commission="5%"
+                            data-categories-label="Вид недвижимости"
+                            data-years-min="5"
+                            data-years-max="30"
+                            data-years-step="5"
+                            data-sum-min="500000"
+                            data-sum-max="5000000"
+                            class="credit-calc-offer"
+                        >
+                            <div
+                                data-name="Квартира"
+                                data-rate="10,5%"
+                                data-rate-bank="16,2%"
+                                data-insurance="0,5%"
+                                data-insurance-bank="0,8%"
+                                class="credit-calc-category"
+                            ></div>
+
+                            <div
+                                data-name="Дом"
+                                data-rate="10,5%"
+                                data-rate-bank="17%"
+                                data-insurance="0,5%"
+                                data-insurance-bank="0,8%"
+                                class="credit-calc-category"
+                            ></div>
+                            <div
+                                data-name="Земля"
+                                data-rate="15,5%"
+                                data-rate-bank="19%"
+                                data-insurance="0,2%"
+                                data-insurance-bank="0,4%"
+                                class="credit-calc-category"
+                            ></div>
+                            <div
+                                data-name="Коммерческая недвижимость"
+                                data-rate="13,5%"
+                                data-rate-bank="18%"
+                                data-insurance="0,65%"
+                                data-insurance-bank="1%"
+                                class="credit-calc-category"
+                            ></div>
+                        </div>
+
+                        <div
+                            data-name="Рефинансирование потребительского кредита"
+                            data-sum-min="500000"
+                            data-sum-max="5000000"
+                            data-years-min="1"
+                            data-years-max="5"
+                            data-rate="12,5%"
+                            data-rate-bank="19%"
+                            data-insurance="0%"
+                            data-insurance-bank="9%"
+                            class="credit-calc-offer"
+                        ></div>
+                        <div
+                            data-name="Рефинансирование ипотеки"
+                            data-commission="2%"
+                            data-categories-label="Вид недвижимости"
+                            data-years-min="5"
+                            data-years-max="30"
+                            data-years-step="5"
+                            data-sum-min="1000000"
+                            data-sum-max="100000000"
+                            class="credit-calc-offer"
+                        >
+                            <div
+                                data-name="Квартира"
+                                data-rate="9,2%"
+                                data-rate-bank="11,75%"
+                                data-insurance="0,5%"
+                                data-insurance-bank="0,8%"
+                                class="credit-calc-category"
+                            ></div>
+
+                            <div
+                                data-name="Дом"
+                                data-rate="8,2%"
+                                data-rate-bank="10,3%"
+                                data-insurance="0,5%"
+                                data-insurance-bank="0,8%"
+                                class="credit-calc-category"
+                            ></div>
+                            <div
+                                data-name="Земля"
+                                data-rate="8,5%"
+                                data-rate-bank="11,5%"
+                                data-insurance="0,2%"
+                                data-insurance-bank="0,4%"
+                                class="credit-calc-category"
+                            ></div>
+                            <div
+                                data-name="Коммерческая недвижимость"
+                                data-rate="8,2%"
+                                data-rate-bank="11,5%"
+                                data-insurance="0,65%"
+                                data-insurance-bank="1%"
+                                class="credit-calc-category"
+                            ></div>
+                        </div>
+                        <div
+                            data-name="Рефинансирование залога"
+                            data-commission="5%"
+                            data-categories-label="Вид недвижимости"
+                            data-years-min="5"
+                            data-years-max="30"
+                            data-years-step="5"
+                            data-sum-min="500000"
+                            data-sum-max="5000000"
+                            class="credit-calc-offer"
+                        >
+                            <div
+                                data-name="Квартира"
+                                data-rate="10,5%"
+                                data-rate-bank="16,2%"
+                                data-insurance="0,5%"
+                                data-insurance-bank="0,8%"
+                                class="credit-calc-category"
+                            ></div>
+
+                            <div
+                                data-name="Дом"
+                                data-rate="10,5%"
+                                data-rate-bank="17%"
+                                data-insurance="0,5%"
+                                data-insurance-bank="0,8%"
+                                class="credit-calc-category"
+                            ></div>
+                            <div
+                                data-name="Земля"
+                                data-rate="15,5%"
+                                data-rate-bank="19%"
+                                data-insurance="0,2%"
+                                data-insurance-bank="0,4%"
+                                class="credit-calc-category"
+                            ></div>
+                            <div
+                                data-name="Коммерческая недвижимость"
+                                data-rate="13,5%"
+                                data-rate-bank="18%"
+                                data-insurance="0,65%"
+                                data-insurance-bank="1%"
+                                class="credit-calc-category"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="c-form">
+                <div class="wr wr33">
+                    <div class="block">
+                        <br />
+                        <div class="subtitle">
+                            Укажите контактные данные. <br />
+                            Через 30 минут с вами свяжется специалист <br />
+                            по кредитованию и ответит на ваш вопрос
+                        </div>
+                        <form
+                            action=""
+                            method="post"
+                            data-result="Вам перезвонит специалист по кредитованию в течение 30 минут."
+                            class="order-form"
+                        >
+                            <input type="hidden" name="idPageToForm" value="Взять ипотеку на квартиру" />
+                            <div class="btn-group clearfix">
+                                <input type="text" name="name" placeholder="Введите ваше имя" class="form-control" />
+                                <input type="text" name="phone" placeholder="+7 (___) ___-__-__" class="form-control" />
+                            </div>
+                            <button type="submit" class="btn btn-default" data-event="main-phone-order-form">Получить консультацию</button>
+                            <input type="hidden" name="goal" value="lead" />
+                            <input type="hidden" name="additional" value="Получить консультацию" />
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <div class="wr wr31">
+                <div class="block">
+                    <div class="line"></div>
+                    <ul class="clearfix inner-likemenu-fix">
+                        <li itemprop="annualPercentageRate" itemscope="" itemtype="http://schema.org/QuantitativeValue">
+                            <span itemprop="name">Ставка по кредиту</span> <br />
+                            от <span itemprop="minValue" content="8.50">8,50%</span>
+                        </li>
+                        <li>Одобрение банком за 3 дня</li>
+                        <li>
+                            Без <br />
+                            первоначального взноса
+                        </li>
+                        <li>По двум документам при 30% взноса</li>
+                        <li>Без документов по бизнесу</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="wr wr6 wrtext">
+                <div class="block"></div>
+            </div>
+            <div class="hr-page"></div>
+
+            <div class="wr wr6 linksblock">
+                <div class="block">
+                    <div class="like-h2">Похожие услуги Ипотека:</div>
+                    <ul>
+                        <li>
+                            <a href="/ipoteka/bez-pervonachalnogo-vznosa">Без первого взноса</a>
+                        </li>
+                        <li>
+                            <a href="/vzyat-kredit/3000000">На 3000000 рублей</a>
+                        </li>
+                        <li>
+                            <a href="/vzyat-kredit/bez-spravki-o-dohodah">Без справки о доходах</a>
+                        </li>
+                        <li>
+                            <a href="/копия-кредит-без-залога-для-ип">Без залога для ИП</a>
+                        </li>
+                        <li>
+                            <a href="/pomoshh-v-poluchenii-kredita">Помощь в получении кредита</a>
+                        </li>
+                        <li>
+                            <a href="/blog-business">Бизнес кредит</a>
+                        </li>
+                        <li>
+                            <a href="/копия-кредит-под-залог-у-частного-инвестора">У частного инвестора</a>
+                        </li>
+                        <li>
+                            <a href="/blog-consumer">Потребительский кредит</a>
+                        </li>
+                        <li>
+                            <a href="/refinansirovaniye-kreditov/refinansirovaniye-dlya-biznesa">Рефинансирование для бизнеса</a>
+                        </li>
+                        <li>
+                            <a href="/our-team">Наша команда</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wr wr6 wrtext">
+                <div class="block">
+                    <h2>Кто сможет взять ипотечный кредит в банке</h2>
+
+                    <p>
+                        Каждый банк выдвигает свой список требований к заемщику при оформлении ипотеки на квартиру, но, как правило, в нем
+                        обязательно присутствуют следующие приоритеты:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Российское гражданство. Жители других государств могут получить ипотеку на покупку квартиры только в нескольких
+                            крупнейших банках и финансовых организациях с иностранным капиталом.
+                        </li>
+                        <li>
+                            Возрастные рамки. Большинство кредитующих структур сотрудничают с заемщиками не младше 21 года и в основном
+                            ограничивают срок кредита моментом выхода на пенсию (55-60 лет). Но бывают предложения и для людей в возрасте до
+                            75 лет.
+                        </li>
+                        <li>
+                            Стабильный заработок. В лучшем случае удастся взять ипотечный кредит при условии, что ежемесячные платежи не
+                            выше 50 % подтвержденных доходов. В сомнительных ситуациях банк может предложить привлечь поручителей или
+                            созаемщиков.
+                        </li>
+                        <li>
+                            Чтобы оформить ипотеку на квартиру, нужен непрерывный трудовой стаж не менее 3 месяца (1 года) на текущем месте
+                            работы. Это подтверждается официально заверенной копией трудовой книжки.
+                        </li>
+                        <li>
+                            Чистота кредитной истории. Соответствующие данные обязательно проверяются, и если в прошлом есть нарушение
+                            долговых обязательств, взять ипотеку на квартиру вряд ли получится, особенно если просрочка составляет более 120
+                            дней.
+                        </li>
+                        <li>Обременения (например, ипотека другого банка или пожизненная рента).</li>
+                    </ul>
+
+                    <p>
+                        Если речь идет об особом статусе — взятии ипотеки на квартиру для пенсионеров, военных, молодой семьи, необходимо
+                        его подтверждение.
+                    </p>
+
+                    <h2>Как не попасть в кредитную кабалу, оформляя ипотеку на квартиру</h2>
+
+                    <p>К сожалению, этот вид кредитования таит в себе много рисков для заемщика:</p>
+
+                    <ul>
+                        <li>большой первоначальный взнос (до 20 % всей суммы);</li>
+                        <li>непомерно высокие годовые ставки (могут достигать 22 %);</li>
+                        <li>завышенная стоимость сопутствующих услуг, скрытые комиссии;</li>
+                        <li>
+                            невыгодные дополнительные условия — например, чтобы взять ипотечный кредит в банке, придется заключить договор
+                            страхования, цена которого может приблизиться к 1,5 % кредитной суммы.
+                        </li>
+                        <li>зависимость от колебаний курса валют и другие.</li>
+                    </ul>
+
+                    <p>
+                        Специалисты «Финансового сервиса» располагают всеми механизмами создания оптимальных условий целевого кредитования
+                        для каждого клиента. Партнеры компании — 69 проверенных ипотечных банков России, в которых можно взять ипотеку на
+                        покупку квартиры.
+                    </p>
+
+                    <p>
+                        Наши опытные эксперты помогут найти самые привлекательные предложения и детально разобраться в формулировках
+                        кредитного договора, минимизируют риск переплат. Мы проводим предварительный анализ заявок наших клиентов, выявляем
+                        и корректируем невыгодную информацию.
+                    </p>
+
+                    <p>
+                        В особых ситуациях оговариваем возможность займа напрямую с руководством кредитующей организации и всегда добиваемся
+                        лояльных процентных ставок. Если вы решили оформить ипотеку на квартиру, но опасаетесь кредитной западни или имеете
+                        репутацию необязательного заемщика, обратитесь к нам.
+                    </p>
+
+                    <p>&nbsp;</p>
+
+                    <p>
+                        Цель компании «Финансовый сервис» — помочь клиентам взять ипотеку на квартиру с самой привлекательной кредитной
+                        программой. Этому способствует специально разработанная технология 3Q-андеррайтинга, позволяющая:
+                    </p>
+
+                    <ul>
+                        <li>значительно повысить вероятность одобрения банком кредитной заявки;</li>
+                        <li>добиться минимальной процентной ставки.</li>
+                    </ul>
+
+                    <p>Сотрудничество с профессионалами включает защиту от всех возможных рисков долгосрочного кредитования.</p>
+
+                    <h2>Ради чего стоит взять ипотечный кредит</h2>
+
+                    <p>
+                        По сути, ипотекой называют долгосрочный кредит со сроком погашения от 1 года до 50 лет. В качестве залога обычно
+                        выступает объект недвижимости, на который выдается ссуда. Заемщик может пользоваться квартирой по своему усмотрению
+                        с момента покупки, а после погашения долга становится ее полновластным владельцем.
+                    </p>
+
+                    <p>
+                        Таким образом, взятие ипотечного кредита избавляет от поисков съемного жилья, затрат на аренду, необходимости годами
+                        копить необходимую сумму для приобретения недвижимости.
+                    </p>
+                </div>
+            </div>
+            <div class="wr wr6" style="border-top: 1px solid #e5e5e5;">
+                <!--noindex-->
+                <div class="block">
+                    <div class="text">
+                        <p>
+                            Чтобы добиться лучших условий кредитования для своих клиентов, мы разработали технологию 3Q-андеррайтинга на
+                            основе процедур ведущих российских банков.
+                        </p>
+                        <p>
+                            Это позволяет нам посмотреть на кредитную заявку глазами банка, прежде чем она попадёт на&nbsp;стол банковского
+                            сотрудника, что в 3 раза повышает вероятность одобрения. С помощью данной технологии мы гарантированно выявляем
+                            и исправляем все слабые стороны заявки и&nbsp;добиваемся самой низкой ставки по кредиту в&nbsp;каждом конкретном
+                            случае.
+                        </p>
+                        <p>Мы уверены в этом, поэтому все расходы по&nbsp;одобрению кредита берём на себя.</p>
+                    </div>
+                    <div class="subtitle">Если решение вас не устроит, вы не&nbsp;потеряете ни копейки.</div>
+                    <div class="info">
+                        <div class="info-number">95%</div>
+                        <div class="info-title">Наших клиентов</div>
+                        <div class="info-text">получают ипотеку на лучших из&nbsp;имеющихся на рынке условий</div>
+                    </div>
+                </div>
+                <!--/noindex-->
+            </div>
+
+            <div class="wr wr30">
+                <div class="block">
+                    <div class="title">Лучшие кредитные эксперты Москвы</div>
+                    <ul class="clearfix">
+                        <li class="clearfix">
+                            <a
+                                href="#"
+                                data-title="Закажите обратный звонок"
+                                data-fields="name,phone,time"
+                                data-goal="lead"
+                                data-btn="Заказать звонок"
+                                data-subtext="Мы позвоним вам в ближайшее время"
+                                data-additional="Обратный звонок"
+                                data-postname="Евгений Прасолов"
+                                class="open-callback"
+                            >
+                                <div class="bg"></div>
+                                <div class="btn-custom">Получить консультацию</div>
+                                <img src="assets/tamplate/img/wr30/1.jpg" alt="Евгений Прасолов" title="Директор по развитию бизнеса" />
+                                <div class="info">
+                                    <div class="li-name">Евгений Прасолов</div>
+                                    <div class="li-post">Директор по развитию бизнеса</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a
+                                href="#"
+                                data-title="Закажите обратный звонок"
+                                data-fields="name,phone,time"
+                                data-goal="lead"
+                                data-btn="Заказать звонок"
+                                data-subtext="Мы позвоним вам в ближайшее время"
+                                data-additional="Обратный звонок"
+                                data-postname="Юрий Калустьян"
+                                class="open-callback"
+                            >
+                                <div class="bg"></div>
+                                <div class="btn-custom">Получить консультацию</div>
+                                <img src="assets/tamplate/img/wr30/2.jpg" alt="Юрий Калустьян" title="Эксперт в области ипотеки" />
+                                <div class="info">
+                                    <div class="li-name">Юрий Калустьян</div>
+                                    <div class="li-post">Эксперт в области ипотеки</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a
+                                href="#"
+                                data-title="Закажите обратный звонок"
+                                data-fields="name,phone,time"
+                                data-goal="lead"
+                                data-btn="Заказать звонок"
+                                data-subtext="Мы позвоним вам в ближайшее время"
+                                data-additional="Обратный звонок"
+                                data-postname="Андрей Зайцев"
+                                class="open-callback"
+                            >
+                                <div class="bg"></div>
+                                <div class="btn-custom">Получить консультацию</div>
+                                <img src="assets/tamplate/img/wr30/3.jpg" alt="Андрей Зайцев" title="Эксперт по залоговому кредитованию" />
+                                <div class="info">
+                                    <div class="li-name">Андрей Зайцев</div>
+                                    <div class="li-post">Эксперт по залоговому кредитованию</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a
+                                href="#"
+                                data-title="Закажите обратный звонок"
+                                data-fields="name,phone,time"
+                                data-goal="lead"
+                                data-btn="Заказать звонок"
+                                data-subtext="Мы позвоним вам в ближайшее время"
+                                data-additional="Обратный звонок"
+                                data-postname="Юрий Лелюхин"
+                                class="open-callback"
+                            >
+                                <div class="bg"></div>
+                                <div class="btn-custom">Получить консультацию</div>
+                                <img
+                                    src="assets/tamplate/img/wr30/5.jpg"
+                                    alt="Юрий Лелюхин"
+                                    title="Эксперт по кредитованию юридических лиц"
+                                />
+                                <div class="info">
+                                    <div class="li-name">Юрий Лелюхин</div>
+                                    <div class="li-post">Эксперт по&nbsp;кредитованию юридических лиц</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a
+                                href="#"
+                                data-title="Закажите обратный звонок"
+                                data-fields="name,phone,time"
+                                data-goal="lead"
+                                data-btn="Заказать звонок"
+                                data-subtext="Мы позвоним вам в ближайшее время"
+                                data-additional="Обратный звонок"
+                                data-postname="Анна Гладышева"
+                                class="open-callback"
+                            >
+                                <div class="bg"></div>
+                                <div class="btn-custom">Получить консультацию</div>
+                                <img
+                                    src="assets/tamplate/img/wr30/51.jpg"
+                                    alt="Анна Гладышева"
+                                    title="Эксперт в области потребительского кредитования"
+                                />
+                                <div class="info">
+                                    <div class="li-name">Анна Гладышева</div>
+                                    <div class="li-post">Эксперт в области&nbsp; потребительского кредитования</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a
+                                href="#"
+                                data-title="Закажите обратный звонок"
+                                data-fields="name,phone,time"
+                                data-goal="lead"
+                                data-btn="Заказать звонок"
+                                data-subtext="Мы позвоним вам в ближайшее время"
+                                data-additional="Обратный звонок"
+                                data-postname="Евгений Радыгин"
+                                class="open-callback"
+                            >
+                                <div class="bg"></div>
+                                <div class="btn-custom">Получить консультацию</div>
+                                <img
+                                    src="assets/tamplate/img/wr30/52.jpg"
+                                    alt="Евгений Радыгин"
+                                    title="Директор по развитию партнерской сети"
+                                />
+                                <div class="info">
+                                    <div class="li-name">Евгений Радыгин</div>
+                                    <div class="li-post">Директор по&nbsp;развитию партнерской сети</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="wr wr13">
+                <!--noindex-->
+                <div class="block">
+                    <div class="title">Как мы работаем</div>
+                    <div class="subtitle">Не тратьте время на очереди в банках</div>
+                    <div class="items">
+                        <div class="item clearfix">
+                            <div class="item-info">
+                                <div class="item-step">Сначала</div>
+                                <div class="item-title">Отправляете заявку</div>
+                                <div class="item-text">
+                                    В течение дня мы рассмотрим вашу заявку <br />
+                                    и предложим предварительные условия <br />
+                                    получения кредита
+                                </div>
+                                <a
+                                    href="#"
+                                    data-title="1 минута отделяет вас от лучших кредитных предложений — просто заполните заявку"
+                                    data-subtitle="Эксперт позвонит и сделает индивидуальное предложение"
+                                    data-btn="Отправить заявку"
+                                    data-subtext="Вам перезвонит специалист по кредитованию через 5 минут."
+                                    class="btn btn-bordered open-calculator"
+                                    >Оставить заявку</a
+                                >
+                            </div>
+                            <div class="item-img"></div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="item-info">
+                                <div class="item-step">Потом</div>
+                                <div class="item-title">Предоставляете документы</div>
+                                <div class="item-text">
+                                    Вы можете подъехать в наш офис <br />
+                                    или прислать документы по электронной почте
+                                </div>
+                            </div>
+                            <div class="item-img"></div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="item-info">
+                                <div class="item-step">Далее</div>
+                                <div class="item-title">Получаете карту банков</div>
+                                <div class="item-text">
+                                    После полной проверки по технологии <br />
+                                    3Q-андеррайтинга мы формируем карту <br />
+                                    банков, содержащую варианты кредитования, <br />
+                                    и согласовываем её с вами
+                                </div>
+                            </div>
+                            <div class="item-img"></div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="item-info">
+                                <div class="item-step">Далее</div>
+                                <div class="item-title">Мы добиваемся одобрения</div>
+                                <div class="item-text">
+                                    Вы получаете положительное решение банка <br />
+                                    и оцениваете его. Если условия вам подходят, <br />
+                                    то вы оформляете кредит
+                                </div>
+                            </div>
+                            <div class="item-img"></div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="item-info">
+                                <div class="item-step">После всего</div>
+                                <div class="item-title">Завершаем сделку</div>
+                                <div class="item-text">
+                                    Мы бесплатно проверяем юридическую <br />
+                                    чистоту недвижимости, готовим все <br />
+                                    необходимые документы, обеспечиваем <br />
+                                    юридическую поддержку на сделке
+                                </div>
+                            </div>
+                            <div class="item-img"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--/noindex-->
+            </div>
+
+            <div class="wr wr9">
+                <!--noindex-->
+                <div class="block">
+                    <div class="title">Почему банки-партнёры кредитуют наших клиентов?</div>
+                    <ul class="clearfix">
+                        <li>
+                            <div class="li-step">Первое</div>
+                            <div class="li-text">
+                                Мы знаем то, что не принято озвучивать. Получая информацию «из&nbsp;первых рук», мы правильно интерпретируем
+                                её и наиболее эффективно используем при работе с нашими клиентами.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-step">Второе</div>
+                            <div class="li-text">
+                                Мы гарантируем партнёрам высокий уровень платёжной дисциплины наших клиентов и&nbsp;качественно
+                                подготовленный пакет документов. За счёт этого клиенты получают скидки от наших партнёров и берут кредиты
+                                без навязанных страховок.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-step">Третье</div>
+                            <div class="li-text">
+                                Во многих случаях мы напрямую общаемся с&nbsp;руководством банков. Президенты и вице-президенты — наш
+                                уровень общения. Вытягиваем случаи, которые другим <br />
+                                не по силам.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-step">Четвёртое</div>
+                            <div class="li-text">
+                                120 банков-партнёров предлагают 370 программ кредитования. Как минимум <br />
+                                5 из них точно подойдут вам.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--/noindex-->
+            </div>
+            <div class="wr wr15" id="1_min_form">
+                <div class="block">
+                    <div class="title">
+                        1 минута отделяет вас от лучших кредитных предложений — <br />
+                        просто заполните заявку
+                    </div>
+                    <div class="subtitle">Эксперт позвонит и сделает индивидуальное предложение!</div>
+                    <div class="line"></div>
+                    <div class="index-calc js-calculator">
+                        <form
+                            id="form1"
+                            action=""
+                            method="post"
+                            data-result="Вам перезвонит эксперт в области ипотеки в течение 30 минут."
+                            class="order-form"
+                            novalidate="novalidate"
+                        >
+                            <input type="hidden" name="idPageToForm" value="Взять ипотеку на квартиру" />
+                            <div class="btn-group top clearfix js-select-type" style="display: none;">
+                                <label>Выберите тип</label>
+                                <div class="form-control select-calc js-navigation">
+                                    <span>Выберите тип</span>
+                                    <div class="select-calc-items">
+                                        <div data-type="mortgage" class="select-calc-item">Ипотека</div>
+                                        <div data-type="secured" class="select-calc-item">Кредит под залог</div>
+                                        <div data-type="consumer" class="select-calc-item">Потребительский кредит</div>
+                                        <div data-type="business" class="select-calc-item">Бизнес-кредит</div>
+                                    </div>
+                                    <input type="hidden" name="credit" value="Ипотека" id="formtip" />
+                                </div>
+                            </div>
+                            <div class="btn-group clearfix js-select-house">
+                                <label>Вид недвижимости</label>
+                                <div class="form-control select-calc">
+                                    <span>Квартира (вторичный рынок)</span>
+                                    <div class="select-calc-items">
+                                        <div class="select-calc-item">Квартира (первичный рынок)</div>
+                                        <div class="select-calc-item">Квартира (вторичный рынок)</div>
+                                        <div class="select-calc-item">Дом</div>
+                                        <div class="select-calc-item">Земля</div>
+                                        <div class="select-calc-item">Коммерческая недвижимость</div>
+                                    </div>
+                                    <input
+                                        type="hidden"
+                                        name="house"
+                                        value="Квартира (вторичный рынок)"
+                                        class="not-validate"
+                                        id="formhouse"
+                                    />
+                                </div>
+                            </div>
+                            <div class="btn-group center clearfix">
+                                <label>Сумма кредита руб.</label>
+                                <input
+                                    type="text"
+                                    name="summ"
+                                    value="1 100 000"
+                                    class="form-control not-validate js-calc-summ-input money-format"
+                                    id="formsumm"
+                                />
+                                <div class="ion-center">
+                                    <span class="irs js-irs-1"
+                                        ><span class="irs"
+                                            ><span class="irs-line" tabindex="-1"
+                                                ><span class="irs-line-left"></span><span class="irs-line-mid"></span
+                                                ><span class="irs-line-right"></span></span
+                                            ><span class="irs-min" style="visibility: hidden;">1 000 000</span
+                                            ><span class="irs-max" style="visibility: visible;">100 000 000</span
+                                            ><span class="irs-from" style="visibility: hidden;">0</span
+                                            ><span class="irs-to" style="visibility: hidden;">0</span
+                                            ><span class="irs-single" style="left: -8.53333%;">1 000 000</span></span
+                                        ><span class="irs-grid"></span><span class="irs-bar" style="left: 1.73333%; width: 0%;"></span
+                                        ><span class="irs-bar-edge"></span
+                                        ><span class="irs-shadow shadow-single" style="display: none;"></span
+                                        ><span class="irs-slider single" style="left: 0%;"></span
+                                    ></span>
+                                    <div class="js-calc-ion-summ irs-hidden-input"></div>
+                                </div>
+                            </div>
+                            <div class="btn-group center-bottom js-ion" style="display: block;">
+                                <label>
+                                    <span class="js-ion-title">Первоначальный взнос, %</span>
+                                </label>
+                                <span class="irs js-irs-0 irs-with-grid"
+                                    ><span class="irs"
+                                        ><span class="irs-line" tabindex="-1"
+                                            ><span class="irs-line-left"></span><span class="irs-line-mid"></span
+                                            ><span class="irs-line-right"></span></span
+                                        ><span class="irs-min" style="visibility: visible;">0</span
+                                        ><span class="irs-max" style="visibility: visible;">70</span
+                                        ><span class="irs-from" style="visibility: hidden;">0</span
+                                        ><span class="irs-to" style="visibility: hidden;">0</span
+                                        ><span class="irs-single" style="left: 1.2218%;">0</span></span
+                                    ><span class="irs-grid" style="width: 97.5564%; left: 1.1218%;"
+                                        ><span class="irs-grid-pol" style="left: 0%"></span
+                                        ><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: 0%;">0</span
+                                        ><span class="irs-grid-pol small" style="left: 4.761904762%"></span
+                                        ><span class="irs-grid-pol small" style="left: 2.380952381%"></span
+                                        ><span class="irs-grid-pol" style="left: 7.142857143%"></span
+                                        ><span
+                                            class="irs-grid-text js-grid-text-1"
+                                            style="left: 7.14286%; visibility: visible; margin-left: 0%;"
+                                            >5</span
+                                        ><span class="irs-grid-pol small" style="left: 11.904761905%"></span
+                                        ><span class="irs-grid-pol small" style="left: 9.523809524%"></span
+                                        ><span class="irs-grid-pol" style="left: 14.285714286%"></span
+                                        ><span
+                                            class="irs-grid-text js-grid-text-2"
+                                            style="left: 14.2857%; visibility: visible; margin-left: 0%;"
+                                            >10</span
+                                        ><span class="irs-grid-pol small" style="left: 19.047619048%"></span
+                                        ><span class="irs-grid-pol small" style="left: 16.666666667%"></span
+                                        ><span class="irs-grid-pol" style="left: 21.428571429%"></span
+                                        ><span
+                                            class="irs-grid-text js-grid-text-3"
+                                            style="left: 21.4286%; visibility: visible; margin-left: 0%;"
+                                            >15</span
+                                        ><span class="irs-grid-pol small" style="left: 26.190476191%"></span
+                                        ><span class="irs-grid-pol small" style="left: 23.80952381%"></span
+                                        ><span class="irs-grid-pol" style="left: 28.571428572%"></span
+                                        ><span class="irs-grid-text js-grid-text-4" style="left: 28.5714%; margin-left: 0%;">20</span
+                                        ><span class="irs-grid-pol small" style="left: 33.333333334%"></span
+                                        ><span class="irs-grid-pol small" style="left: 30.952380953%"></span
+                                        ><span class="irs-grid-pol" style="left: 35.714285715%"></span
+                                        ><span
+                                            class="irs-grid-text js-grid-text-5"
+                                            style="left: 35.7143%; visibility: visible; margin-left: 0%;"
+                                            >25</span
+                                        ><span class="irs-grid-pol small" style="left: 40.476190477%"></span
+                                        ><span class="irs-grid-pol small" style="left: 38.095238096%"></span
+                                        ><span class="irs-grid-pol" style="left: 42.857142858%"></span
+                                        ><span
+                                            class="irs-grid-text js-grid-text-6"
+                                            style="left: 42.8571%; visibility: visible; margin-left: 0%;"
+                                            >30</span
+                                        ><span class="irs-grid-pol small" style="left: 47.61904762%"></span
+                                        ><span class="irs-grid-pol small" style="left: 45.238095239%"></span
+                                        ><span class="irs-grid-pol" style="left: 50.000000001%"></span
+                                        ><span class="irs-grid-text js-grid-text-7" style="left: 50%; visibility: visible; margin-left: 0%;"
+                                            >35</span
+                                        ><span class="irs-grid-pol small" style="left: 54.761904763%"></span
+                                        ><span class="irs-grid-pol small" style="left: 52.380952382%"></span
+                                        ><span class="irs-grid-pol" style="left: 57.142857144%"></span
+                                        ><span class="irs-grid-text js-grid-text-8" style="left: 57.1429%; margin-left: 0%;">40</span
+                                        ><span class="irs-grid-pol small" style="left: 61.904761906%"></span
+                                        ><span class="irs-grid-pol small" style="left: 59.523809525%"></span
+                                        ><span class="irs-grid-pol" style="left: 64.285714287%"></span
+                                        ><span
+                                            class="irs-grid-text js-grid-text-9"
+                                            style="left: 64.2857%; visibility: visible; margin-left: 0%;"
+                                            >45</span
+                                        ><span class="irs-grid-pol small" style="left: 69.047619049%"></span
+                                        ><span class="irs-grid-pol small" style="left: 66.666666668%"></span
+                                        ><span class="irs-grid-pol" style="left: 71.42857143%"></span
+                                        ><span
+                                            class="irs-grid-text js-grid-text-10"
+                                            style="left: 71.4286%; visibility: visible; margin-left: 0%;"
+                                            >50</span
+                                        ><span class="irs-grid-pol small" style="left: 76.190476192%"></span
+                                        ><span class="irs-grid-pol small" style="left: 73.809523811%"></span
+                                        ><span class="irs-grid-pol" style="left: 78.571428573%"></span
+                                        ><span
+                                            class="irs-grid-text js-grid-text-11"
+                                            style="left: 78.5714%; visibility: visible; margin-left: 0%;"
+                                            >55</span
+                                        ><span class="irs-grid-pol small" style="left: 83.333333335%"></span
+                                        ><span class="irs-grid-pol small" style="left: 80.952380954%"></span
+                                        ><span class="irs-grid-pol" style="left: 85.714285716%"></span
+                                        ><span class="irs-grid-text js-grid-text-12" style="left: 85.7143%; margin-left: 0%;">60</span
+                                        ><span class="irs-grid-pol small" style="left: 90.476190478%"></span
+                                        ><span class="irs-grid-pol small" style="left: 88.095238097%"></span
+                                        ><span class="irs-grid-pol" style="left: 92.857142859%"></span
+                                        ><span
+                                            class="irs-grid-text js-grid-text-13"
+                                            style="left: 92.8571%; visibility: visible; margin-left: 0%;"
+                                            >65</span
+                                        ><span class="irs-grid-pol" style="left: 100%"></span
+                                        ><span
+                                            class="irs-grid-text js-grid-text-14"
+                                            style="left: 100%; visibility: visible; margin-left: 0%;"
+                                            >70</span
+                                        ></span
+                                    ><span class="irs-bar" style="left: 1.2218%; width: 0%;"></span><span class="irs-bar-edge"></span
+                                    ><span class="irs-shadow shadow-single" style="display: none;"></span
+                                    ><span class="irs-slider single" style="left: 0%;"></span
+                                ></span>
+                                <div class="js-calc-ion-type irs-hidden-input"></div>
+                                <input
+                                    type="hidden"
+                                    name="period-name"
+                                    value="Первоначальный взнос, %"
+                                    class="not-validate js-calc-nameType-input"
+                                    id="formperiodname"
+                                />
+                                <input type="hidden" name="period" value="0" class="not-validate js-calc-type-input" id="formperiod" />
+                            </div>
+                            <div class="btn-group bottom clearfix">
+                                <input type="text" name="name" placeholder="Введите ваше имя" class="form-control" id="formname" />
+                                <input type="text" name="phone" placeholder="+7 (___) ___-__-__" class="form-control" id="formphone" />
+                            </div>
+                            <button id="send_form4" type="submit" class="btn btn-default" data-event="main-page-end-order-form">
+                                Отправить заявку
+                            </button>
+                            <input type="hidden" name="goal" value="lead" />
+                            <input type="hidden" name="additional" value="Оставить заявку" />
+                            <div class="subtext">Вам перезвонит эксперт в области ипотеки в течение 30 минут.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wr wr-footer">
+                <div class="block">
+                    <div class="line"></div>
+                    <div class="clearfix">
+                        <div class="left">
+                            <a href="/" class="icon icon-logo-footer"></a>
+                            <div class="f-menu-wrapper">
+                                <div class="f-menu-box">
+                                    <ul class="footer-menu">
+                                        <li><a href="https://finsr.ru/ipoteka">Ипотека</a></li>
+                                        <li><a href="https://finsr.ru/ipoteka/bez-spravok">Без справок</a></li>
+                                        <li><a href="https://finsr.ru/ipoteka/kvartiry-v-novostroykah">В новостройке</a></li>
+                                        <li><a href="https://finsr.ru/ipoteka/pod-zalog">Под залог</a></li>
+                                        <li><a href="https://finsr.ru/ipoteka/pensioneram">Пенсионерам</a></li>
+                                        <li><a href="https://finsr.ru/ipoteka/na-pokupku-doma">На покупку дома</a></li>
+                                        <li><a href="https://finsr.ru/ipoteka/na-komnatu">На комнату</a></li>
+                                        <li><a href="https://finsr.ru/ipoteka/na-zemlyu-i-stroitelstvo-doma">На землю</a></li>
+                                        <li><a href="https://finsr.ru/ipoteka/bez-pervonachalnogo-vznosa">Без взноса</a></li>
+                                        <li><a href="https://finsr.ru/ipoteka/dlya-molodyh-specialistov">Молодым</a></li>
+                                        <li><a href="https://finsr.ru/ipoteka/gospodderzhka">Господдержка</a></li>
+                                        <li><a href="https://finsr.ru/ipoteka/s-materinskim-kapitalom">С материнским капиталом</a></li>
+                                    </ul>
+                                </div>
+                                <div class="f-menu-box">
+                                    <ul class="footer-menu">
+                                        <li><a href="https://finsr.ru/kredit-pod-zalog">Кредит под залог</a></li>
+                                        <li><a href="https://finsr.ru/kredit-pod-zalog/nedvizhimosti">Недвижимости</a></li>
+                                        <li><a href="https://finsr.ru/kredit-pod-zalog/kvartiry">Квартиры</a></li>
+                                        <li><a href="https://finsr.ru/kredit-pod-zalog/komnaty">Комнаты</a></li>
+                                        <li><a href="https://finsr.ru/kredit-pod-zalog/chastnogo-doma">Частного дома</a></li>
+                                        <li><a href="https://finsr.ru/kredit-pod-zalog/zemelnogo-uchastka">Земельного участка</a></li>
+                                        <li><a href="https://finsr.ru/kredit-pod-zalog/avto">Автомобиля</a></li>
+                                        <li><a href="https://finsr.ru/kredit-pod-zalog/nalichnymi">Наличными</a></li>
+                                        <li><a href="https://finsr.ru/kredit-pod-zalog/vzyat-v-banke">В банке</a></li>
+                                        <li><a href="https://finsr.ru/kredit-pod-zalog/chastnogo-investora">Частного инвестора</a></li>
+                                    </ul>
+                                </div>
+                                <div class="f-menu-box">
+                                    <ul class="footer-menu">
+                                        <li><a href="https://finsr.ru/kredit-dlya-biznesa">Бизнес-кредит</a></li>
+                                        <li><a href="https://finsr.ru/kredit-dlya-biznesa/dlya-ip">Для ИП</a></li>
+                                        <li>
+                                            <a href="https://finsr.ru/kredit-dlya-biznesa/na-pokupku-gotovogo-biznesa"
+                                                >На покупку готового</a
+                                            >
+                                        </li>
+                                        <li><a href="https://finsr.ru/kredit-dlya-biznesa/na-razvitie-malogo">На развитие</a></li>
+                                        <li><a href="https://finsr.ru/kredit-dlya-biznesa/na-otkrytie-malogo">На открытие</a></li>
+                                        <li><a href="https://finsr.ru/kredit-dlya-biznesa/malogo">Для малого бизнеса</a></li>
+                                        <li><a href="https://finsr.ru/kredit-dlya-biznesa/bez-zaloga">Без залога</a></li>
+                                    </ul>
+                                    <ul class="footer-menu">
+                                        <li><a href="https://finsr.ru/potrebitelskiy-kredit">Потребительский кредит</a></li>
+                                    </ul>
+                                    <ul class="footer-menu">
+                                        <li><a href="https://finsr.ru/refinansirovanie">Рефинансирование</a></li>
+                                    </ul>
+                                </div>
+                                <div class="f-menu-box">
+                                    <ul class="footer-menu">
+                                        <li><a href="https://finsr.ru/vzyat-kredit">Взять кредит</a></li>
+                                        <li><a href="https://finsr.ru/vzyat-kredit/do-250000">До 250 000 руб.</a></li>
+                                        <li><a href="https://finsr.ru/vzyat-kredit/do-300000">До 300 000 руб.</a></li>
+                                        <li><a href="https://finsr.ru/vzyat-kredit/do-500000">До 500 000 руб</a></li>
+                                        <li><a href="https://finsr.ru/vzyat-kredit/3000000">На 3000000 рублей</a></li>
+                                        <li><a href="https://finsr.ru/vzyat-kredit/po-pasportu">По паспорту</a></li>
+                                        <li>
+                                            <a href="https://finsr.ru/vzyat-kredit/s-minimalnoy-procentnoy-stavkoy"
+                                                >С низкой процентной ставкой</a
+                                            >
+                                        </li>
+                                        <li><a href="https://finsr.ru/vzyat-kredit/pod-nizkiy-procent">Под маленький процент</a></li>
+                                        <li><a href="https://finsr.ru/pomoshh-v-poluchenii-kredita">Помощь в получении кредита</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="copyright">
+                                © 2010-2021 «Финансовый сервис» <br /><a
+                                    href="https://maps.google.com/?q=3-%D1%8F+%D0%AF%D0%BC%D1%81%D0%BA%D0%BE%D0%B3%D0%BE+%D0%BF%D0%BE%D0%BB%D1%8F+%D0%B4.9,+%D0%BE%D1%84.+%D0%95116&amp;entry=gmail&amp;source=g"
+                                    >125040, Россия, г. Москва, ул. 3-я Ямского поля д.9, оф. Е116 (БЦ Art Residence) <br /> </a
+                                ><a
+                                    href="https://www.google.com/maps?q=%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D1%8F%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D0%B430%D0%B0+%D1%81%D1%82%D1%80.8&amp;entry=gmail&amp;source=g"
+                                    >105066, Россия, г. Москва, ул. Новорязанская д.30а стр.8</a
+                                ><br />ОГРН: 5107746032862 <br /><br />
+                                Время работы:<br />
+                                Пн.-пт. 09:30-19:00<br />
+                                Сб. 10:00-19:00
+                            </div>
+                            <div class="text">
+                                Сайт ООО «Финансовый сервис» носит исключительно информационный характер <br />
+                                и ни при каких условиях информационные материалы и условия кредитования, размещенные на сайте, не являются
+                                публичной офертой, определяемой положениями Статей 435 и 437 Гражданского кодекса РФ.
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <a href="tel:84997035200" class="phone" id="phone-footer">+7(499)703-52-00</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        data-title="Закажите обратный звонок"
+                                        data-fields="name,phone,time"
+                                        data-goal="lead"
+                                        data-btn="Заказать звонок"
+                                        data-subtext="Мы позвоним вам в ближайшее время"
+                                        data-additional="Обратный звонок"
+                                        class="open-callback"
+                                        >Перезвоните мне</a
+                                    >
+                                </li>
+                                <li>
+                                    <br />
+                                    e-mail: <a href="mailto:info@finsr.ru " id="email">info@finsr.ru </a><br />
+                                    <a class="telegram-button c-art" href="https://t.me/Finsr_official" target="_blank"
+                                        ><img src="assets/tamplate/img/telegram.png" width="24" id="telegram-button" alt="Telegram"
+                                    /></a>
+                                    <a href="https://www.facebook.com/finsrru" target="_blank" class="c-art"
+                                        ><img src="/assets/tamplate/img/icon_facebook.png" alt="Facebook"
+                                    /></a>
+                                    <a href="https://instagram.com/fin.sr" target="_blank" class="c-art"
+                                        ><img src="/assets/tamplate/img/icon_instagram.png" alt="Instagram"
+                                    /></a>
+                                    <a href="https://vk.com/finsr" target="_blank" class="c-art"
+                                        ><img src="/assets/tamplate/img/icon_vk.png" alt="VK"
+                                    /></a>
+                                    <a href="https://www.youtube.com/channel/UCCByNnN6favyOIIKKKwkMgw" target="_blank" class="c-art"
+                                        ><img src="/assets/tamplate/img/icon_youtube.png" alt="YouTube"
+                                    /></a>
+                                    <!--<a href="http://conversionart.ru" target="_blank" class="c-art">Сделано в
+                         <span>ConversionArt</span>
+                       </a>-->
+                                </li>
+                                <li><a href="" class="a-btn-pay-tinkoh btn-default">Оплатить</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-box">
+                <div class="close-menu"></div>
+                <ul class="offers">
+                    <li class="wtf-holder punkt-one">
+                        <div class="open-submenu"></div>
+                        <div class="with-sub">
+                            <div class="link-title">Ипотека</div>
+                            <div class="link-subtitle">от 5,50% за 2 дня</div>
+                        </div>
+                        <div class="wtf-submenu">
+                            <a href="https://finsr.ru/ipoteka">Ипотека</a>
+                            <a href="https://finsr.ru/ipoteka/bez-spravok">Без справок</a>
+                            <a href="https://finsr.ru/ipoteka/kvartiry-v-novostroykah">В новостройке</a>
+                            <a href="https://finsr.ru/ipoteka/pod-zalog">Под залог</a>
+                            <a href="https://finsr.ru/ipoteka/pensioneram">Пенсионерам</a>
+                            <a href="https://finsr.ru/ipoteka/na-pokupku-doma">На покупку дома</a>
+                            <a href="https://finsr.ru/ipoteka/na-komnatu">На комнату</a>
+                            <a href="https://finsr.ru/ipoteka/na-zemlyu-i-stroitelstvo-doma">На землю</a>
+                            <a href="https://finsr.ru/ipoteka/bez-pervonachalnogo-vznosa">Без взноса</a>
+                            <a href="https://finsr.ru/ipoteka/dlya-molodyh-specialistov">Молодым</a>
+                            <a href="https://finsr.ru/ipoteka/gospodderzhka">Господдержка</a>
+                            <a href="https://finsr.ru/ipoteka/s-materinskim-kapitalom">С материнским капиталом</a>
+                        </div>
+                    </li>
+                    <li class="wtf-holder punkt-two">
+                        <div class="open-submenu"></div>
+                        <div class="with-sub">
+                            <div class="link-title">Кредит под залог</div>
+                            <div class="link-subtitle">от 8,5% за 3 дня</div>
+                        </div>
+                        <div class="wtf-submenu">
+                            <a href="https://finsr.ru/kredit-pod-zalog">Кредит под залог</a>
+                            <a href="https://finsr.ru/kredit-pod-zalog/nedvizhimosti">Недвижимости</a>
+                            <a href="https://finsr.ru/kredit-pod-zalog/kvartiry">Квартиры</a>
+                            <a href="https://finsr.ru/kredit-pod-zalog/komnaty">Комнаты</a>
+                            <a href="https://finsr.ru/kredit-pod-zalog/chastnogo-doma">Частного дома</a>
+                            <a href="https://finsr.ru/kredit-pod-zalog/zemelnogo-uchastka">Земельного участка</a>
+                            <a href="https://finsr.ru/kredit-pod-zalog/avto">Автомобиля</a>
+                            <a href="https://finsr.ru/kredit-pod-zalog/nalichnymi">Наличными</a>
+                            <a href="https://finsr.ru/kredit-pod-zalog/vzyat-v-banke">В банке</a>
+                            <a href="https://finsr.ru/kredit-pod-zalog/chastnogo-investora">Частного инвестора</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://finsr.ru/potrebitelskiy-kredit">
+                            <div class="link-title">Потребительский кредит</div>
+                            <div class="link-subtitle">от 6,9% за 1 день</div>
+                        </a>
+                    </li>
+                    <li class="wtf-holder punkt-three">
+                        <div class="open-submenu"></div>
+                        <div class="with-sub">
+                            <div class="link-title">Бизнес-кредит</div>
+                            <div class="link-subtitle">от 9,0% за 2 недели</div>
+                        </div>
+                        <div class="wtf-submenu">
+                            <a href="https://finsr.ru/kredit-dlya-biznesa">Бизнес-кредит</a>
+                            <a href="https://finsr.ru/kredit-dlya-biznesa/dlya-ip">Для ИП</a>
+                            <a href="https://finsr.ru/kredit-dlya-biznesa/na-pokupku-gotovogo-biznesa">На покупку готового</a>
+                            <a href="https://finsr.ru/kredit-dlya-biznesa/na-razvitie-malogo">На развитие</a>
+                            <a href="https://finsr.ru/kredit-dlya-biznesa/na-otkrytie-malogo">На открытие</a>
+                            <a href="https://finsr.ru/kredit-dlya-biznesa/malogo">Для малого бизнеса</a>
+                            <a href="https://finsr.ru/kredit-dlya-biznesa/bez-zaloga">Без залога</a>
+                        </div>
+                    </li>
+                    <li class="wtf-holder punkt-four">
+                        <div class="open-submenu"></div>
+                        <div class="with-sub">
+                            <div class="link-title">Взять кредит</div>
+                            <div class="link-subtitle">от 6,9% за 1 день</div>
+                        </div>
+                        <div class="wtf-submenu">
+                            <a href="https://finsr.ru/vzyat-kredit">Взять кредит</a>
+                            <a href="https://finsr.ru/vzyat-kredit/do-250000">До 250 000 руб.</a>
+                            <a href="https://finsr.ru/vzyat-kredit/do-300000">До 300 000 руб.</a>
+                            <a href="https://finsr.ru/vzyat-kredit/do-500000">До 500 000 руб</a>
+                            <a href="https://finsr.ru/vzyat-kredit/3000000">На 3000000 рублей</a>
+                            <a href="https://finsr.ru/vzyat-kredit/po-pasportu">По паспорту</a>
+                            <a href="https://finsr.ru/vzyat-kredit/s-minimalnoy-procentnoy-stavkoy">С низкой процентной ставкой</a>
+                            <a href="https://finsr.ru/vzyat-kredit/pod-nizkiy-procent">Под маленький процент</a>
+                            <a href="https://finsr.ru/pomoshh-v-poluchenii-kredita">Помощь в получении кредита</a>
+                        </div>
+                    </li>
+
+                    <li class="wtf-holder punkt-five">
+                        <div class="open-submenu"></div>
+                        <div class="with-sub">
+                            <div class="link-title">Рефинансирование</div>
+                            <div class="link-subtitle">от 5,5% за 2 дня</div>
+                        </div>
+                        <div class="wtf-submenu">
+                            <a href="https://finsr.ru/refinansirovaniye-kreditov/refinansirovaniye-ipoteki">Рефинансирование ипотеки</a>
+                            <a href="https://finsr.ru/refinansirovaniye-kreditov/refinansirovaniye-potrebitelskogo-kredita"
+                                >Рефинансирование потребительского кредита</a
+                            >
+                            <a href="https://finsr.ru/refinansirovaniye-kreditov/refinansirovaniye-dlya-biznesa"
+                                >Рефинансирование для бизнеса</a
+                            >
+                            <a href="https://finsr.ru/refinansirovaniye-kreditov/refinansirovaniye-neskolkikh-kreditov"
+                                >Рефинансирование нескольких кредитов</a
+                            >
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="https://finsr.ru/about">О компании</a>
+                    </li>
+                    <li>
+                        <a href="https://ipoteka.finsr.ru/">Ипотечный маркетплейс</a>
+                    </li>
+                    <li>
+                        <a href="https://finsr.ru/sotrudnichestvo">Сотрудничество</a>
+                    </li>
+                    <li>
+                        <a href="https://finsr.ru/blog">Статьи</a>
+                    </li>
+                    <li>
+                        <a href="https://ipoteka.finsr.ru/" target="_blank">Риэлторам</a>
+                    </li>
+                    <li>
+                        <a href="https://finsr.ru/contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="modal-calc" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" data-dismiss="modal" class="close"></button>
+                        <div class="modal-title">1 минута отделяет вас от лучших кредитных предложений — просто заполните заявку</div>
+                        <div class="modal-subtitle">Эксперт позвонит и сделает индивидуальное предложение</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="index-calc js-calculator">
+                            <form
+                                action=""
+                                method="post"
+                                data-result="Вам перезвонит эксперт в области ипотеки в течение 30 минут."
+                                class="order-form"
+                            >
+                                <input type="hidden" name="idPageToForm" value="Взять ипотеку на квартиру" />
+                                <div class="btn-group top clearfix js-select-type" style="display: none;">
+                                    <label>Выберите тип</label>
+                                    <div class="form-control select-calc js-navigation">
+                                        <span>Выберите тип</span>
+                                        <div class="select-calc-items">
+                                            <div data-type="mortgage" class="select-calc-item">Ипотека</div>
+                                            <div data-type="secured" class="select-calc-item">Кредит под залог</div>
+                                            <div data-type="consumer" class="select-calc-item">Потребительский кредит</div>
+                                            <div data-type="business" class="select-calc-item">Бизнес-кредит</div>
+                                        </div>
+                                        <input type="hidden" name="credit" value="Ипотека" id="formcredit2" />
+                                    </div>
+                                </div>
+                                <div class="btn-group clearfix js-select-house">
+                                    <label>Вид недвижимости</label>
+                                    <div class="form-control select-calc">
+                                        <span>Квартира (вторичный рынок)</span>
+                                        <div class="select-calc-items">
+                                            <div class="select-calc-item">Квартира (первичный рынок)</div>
+                                            <div class="select-calc-item">Квартира (вторичный рынок)</div>
+                                            <div class="select-calc-item">Дом</div>
+                                            <div class="select-calc-item">Земля</div>
+                                            <div class="select-calc-item">Коммерческая недвижимость</div>
+                                        </div>
+                                        <input
+                                            type="hidden"
+                                            name="house"
+                                            value="Квартира (вторичный рынок)"
+                                            class="not-validate"
+                                            id="formhouse2"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="btn-group center clearfix">
+                                    <label>Сумма кредита руб.</label>
+                                    <input
+                                        type="text"
+                                        name="summ"
+                                        value="1 100 000"
+                                        class="form-control not-validate js-calc-summ-input money-format"
+                                        id="formsumm2"
+                                    />
+                                    <div class="ion-center">
+                                        <span class="irs js-irs-3"
+                                            ><span class="irs"
+                                                ><span class="irs-line" tabindex="-1"
+                                                    ><span class="irs-line-left"></span><span class="irs-line-mid"></span
+                                                    ><span class="irs-line-right"></span></span
+                                                ><span class="irs-min" style="visibility: visible;">1 000 000</span
+                                                ><span class="irs-max" style="visibility: visible;">100 000 000</span
+                                                ><span class="irs-from" style="visibility: hidden;">0</span
+                                                ><span class="irs-to" style="visibility: hidden;">0</span
+                                                ><span class="irs-single" style="left: 1.73333%;">1 000 000</span></span
+                                            ><span class="irs-grid"></span><span class="irs-bar" style="left: 1.73333%; width: 0%;"></span
+                                            ><span class="irs-bar-edge"></span
+                                            ><span class="irs-shadow shadow-single" style="display: none;"></span
+                                            ><span class="irs-slider single" style="left: 0%;"></span
+                                        ></span>
+                                        <div class="js-calc-ion-summ irs-hidden-input"></div>
+                                    </div>
+                                </div>
+                                <div class="btn-group center-bottom js-ion" style="display: block;">
+                                    <label>
+                                        <span class="js-ion-title">Первоначальный взнос, %</span>
+                                    </label>
+                                    <span class="irs js-irs-2 irs-with-grid"
+                                        ><span class="irs"
+                                            ><span class="irs-line" tabindex="-1"
+                                                ><span class="irs-line-left"></span><span class="irs-line-mid"></span
+                                                ><span class="irs-line-right"></span></span
+                                            ><span class="irs-min" style="visibility: visible;">0</span
+                                            ><span class="irs-max" style="visibility: visible;">70</span
+                                            ><span class="irs-from" style="visibility: hidden;">0</span
+                                            ><span class="irs-to" style="visibility: hidden;">0</span
+                                            ><span class="irs-single" style="left: 1.2218%;">0</span></span
+                                        ><span class="irs-grid" style="width: 97.5564%; left: 1.1218%;"
+                                            ><span class="irs-grid-pol" style="left: 0%"></span
+                                            ><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: 0%;">0</span
+                                            ><span class="irs-grid-pol small" style="left: 4.761904762%"></span
+                                            ><span class="irs-grid-pol small" style="left: 2.380952381%"></span
+                                            ><span class="irs-grid-pol" style="left: 7.142857143%"></span
+                                            ><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 7.14286%; visibility: visible; margin-left: 0%;"
+                                                >5</span
+                                            ><span class="irs-grid-pol small" style="left: 11.904761905%"></span
+                                            ><span class="irs-grid-pol small" style="left: 9.523809524%"></span
+                                            ><span class="irs-grid-pol" style="left: 14.285714286%"></span
+                                            ><span
+                                                class="irs-grid-text js-grid-text-2"
+                                                style="left: 14.2857%; visibility: visible; margin-left: 0%;"
+                                                >10</span
+                                            ><span class="irs-grid-pol small" style="left: 19.047619048%"></span
+                                            ><span class="irs-grid-pol small" style="left: 16.666666667%"></span
+                                            ><span class="irs-grid-pol" style="left: 21.428571429%"></span
+                                            ><span
+                                                class="irs-grid-text js-grid-text-3"
+                                                style="left: 21.4286%; visibility: visible; margin-left: 0%;"
+                                                >15</span
+                                            ><span class="irs-grid-pol small" style="left: 26.190476191%"></span
+                                            ><span class="irs-grid-pol small" style="left: 23.80952381%"></span
+                                            ><span class="irs-grid-pol" style="left: 28.571428572%"></span
+                                            ><span class="irs-grid-text js-grid-text-4" style="left: 28.5714%; margin-left: 0%;">20</span
+                                            ><span class="irs-grid-pol small" style="left: 33.333333334%"></span
+                                            ><span class="irs-grid-pol small" style="left: 30.952380953%"></span
+                                            ><span class="irs-grid-pol" style="left: 35.714285715%"></span
+                                            ><span
+                                                class="irs-grid-text js-grid-text-5"
+                                                style="left: 35.7143%; visibility: visible; margin-left: 0%;"
+                                                >25</span
+                                            ><span class="irs-grid-pol small" style="left: 40.476190477%"></span
+                                            ><span class="irs-grid-pol small" style="left: 38.095238096%"></span
+                                            ><span class="irs-grid-pol" style="left: 42.857142858%"></span
+                                            ><span
+                                                class="irs-grid-text js-grid-text-6"
+                                                style="left: 42.8571%; visibility: visible; margin-left: 0%;"
+                                                >30</span
+                                            ><span class="irs-grid-pol small" style="left: 47.61904762%"></span
+                                            ><span class="irs-grid-pol small" style="left: 45.238095239%"></span
+                                            ><span class="irs-grid-pol" style="left: 50.000000001%"></span
+                                            ><span
+                                                class="irs-grid-text js-grid-text-7"
+                                                style="left: 50%; visibility: visible; margin-left: 0%;"
+                                                >35</span
+                                            ><span class="irs-grid-pol small" style="left: 54.761904763%"></span
+                                            ><span class="irs-grid-pol small" style="left: 52.380952382%"></span
+                                            ><span class="irs-grid-pol" style="left: 57.142857144%"></span
+                                            ><span class="irs-grid-text js-grid-text-8" style="left: 57.1429%; margin-left: 0%;">40</span
+                                            ><span class="irs-grid-pol small" style="left: 61.904761906%"></span
+                                            ><span class="irs-grid-pol small" style="left: 59.523809525%"></span
+                                            ><span class="irs-grid-pol" style="left: 64.285714287%"></span
+                                            ><span
+                                                class="irs-grid-text js-grid-text-9"
+                                                style="left: 64.2857%; visibility: visible; margin-left: 0%;"
+                                                >45</span
+                                            ><span class="irs-grid-pol small" style="left: 69.047619049%"></span
+                                            ><span class="irs-grid-pol small" style="left: 66.666666668%"></span
+                                            ><span class="irs-grid-pol" style="left: 71.42857143%"></span
+                                            ><span
+                                                class="irs-grid-text js-grid-text-10"
+                                                style="left: 71.4286%; visibility: visible; margin-left: 0%;"
+                                                >50</span
+                                            ><span class="irs-grid-pol small" style="left: 76.190476192%"></span
+                                            ><span class="irs-grid-pol small" style="left: 73.809523811%"></span
+                                            ><span class="irs-grid-pol" style="left: 78.571428573%"></span
+                                            ><span
+                                                class="irs-grid-text js-grid-text-11"
+                                                style="left: 78.5714%; visibility: visible; margin-left: 0%;"
+                                                >55</span
+                                            ><span class="irs-grid-pol small" style="left: 83.333333335%"></span
+                                            ><span class="irs-grid-pol small" style="left: 80.952380954%"></span
+                                            ><span class="irs-grid-pol" style="left: 85.714285716%"></span
+                                            ><span class="irs-grid-text js-grid-text-12" style="left: 85.7143%; margin-left: 0%;">60</span
+                                            ><span class="irs-grid-pol small" style="left: 90.476190478%"></span
+                                            ><span class="irs-grid-pol small" style="left: 88.095238097%"></span
+                                            ><span class="irs-grid-pol" style="left: 92.857142859%"></span
+                                            ><span
+                                                class="irs-grid-text js-grid-text-13"
+                                                style="left: 92.8571%; visibility: visible; margin-left: 0%;"
+                                                >65</span
+                                            ><span class="irs-grid-pol" style="left: 100%"></span
+                                            ><span
+                                                class="irs-grid-text js-grid-text-14"
+                                                style="left: 100%; visibility: visible; margin-left: 0%;"
+                                                >70</span
+                                            ></span
+                                        ><span class="irs-bar" style="left: 1.2218%; width: 0%;"></span><span class="irs-bar-edge"></span
+                                        ><span class="irs-shadow shadow-single" style="display: none;"></span
+                                        ><span class="irs-slider single" style="left: 0%;"></span
+                                    ></span>
+                                    <div class="js-calc-ion-type irs-hidden-input"></div>
+                                    <input
+                                        type="hidden"
+                                        name="period-name"
+                                        value="Первоначальный взнос, %"
+                                        class="not-validate js-calc-nameType-input"
+                                        id="formperiodname2"
+                                    />
+                                    <input type="hidden" name="period" value="0" class="not-validate js-calc-type-input" id="formperiod2" />
+                                </div>
+                                <div class="btn-group bottom clearfix">
+                                    <input type="text" name="name" placeholder="Введите ваше имя" class="form-control" id="formname2" />
+                                    <input type="text" name="phone" placeholder="+7 (___) ___-__-__" class="form-control" id="formphone2" />
+                                </div>
+                                <div class="btn-group bottom clearfix black">
+                                    <p>Отправляя форму вы соглашаетесь с <a href="/policy">политикой конфиденциальности</a>.</p>
+                                </div>
+                                <div class="response-ip-city">
+                                    <input type="hidden" name="ya-city" id="ya-city" value=" " />
+                                    <input type="hidden" name="ya-country" id="ya-country" value=" " />
+                                </div>
+                                <button id="send_form2" type="submit" class="btn btn-default" data-event="credit-order-form">
+                                    Отправить заявку
+                                </button>
+                                <input type="hidden" name="goal" value="lead" />
+                                <input type="hidden" name="additional" value="Оставить заявку" />
+                                <div class="subtext">Вам перезвонит эксперт в области ипотеки в течение 30 минут.</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

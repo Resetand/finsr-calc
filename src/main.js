@@ -1,8 +1,10 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import Calculator from "./components/Calculator.vue";
+import { parseConfiguration } from "./utils/configuration-parser";
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+const root = document.getElementById("credit-calc");
+const configuration = parseConfiguration(root);
+
+new Vue({ render: (h) => h(Calculator, { props: { configuration } }) }).$mount(root);
