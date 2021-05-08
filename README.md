@@ -10,16 +10,18 @@
 
 Конфигурация калькулятора описывается с помощью html разметки и настраиваемых атрибутов из которых формируются правила расчета
 
-Разметка состоит из слотов услуг (offers) и опциональных слотов с вложенными категориями
+Разметка состоит из элементов-слотов услуг `x-offer` и опциональных слотов с вложенными категориями `x-category`
 
 Категории будут наследовать конфигурацию из родительского слота услуги, и могут перетирать родительские правила расчета
 
 ! Если услуга всего одна, то компонент с выбором услуг показываться не будет, то же самое и для категорий.
 Таким образом можно показывать только нужное предложение на страницах с продуктом (ипотека, залог и тд)
 
+Пример калькулятора с двумя услугами (Потребительский кредит, Ипотека) и категориями в Ипотеке (Квартира, Коммерческая недвижимость)
+
 ```html
 <div id="credit-calc">
-    <div
+    <x-offer
         data-name="Потребительский кредит"
         data-commission="10%"
         data-sum-min="500000"
@@ -30,9 +32,8 @@
         data-rate-bank="19%"
         data-insurance="0"
         data-insurance-bank="9%"
-        class="credit-calc-offer"
-    ></div>
-    <div
+    ></x-offer>
+    <x-offer
         data-name="Ипотека"
         data-commission="2%"
         data-categories-label="Вид недвижимости"
@@ -41,30 +42,44 @@
         data-years-step="5"
         data-sum-min="1000000"
         data-sum-max="100000000"
-        class="credit-calc-offer"
     >
-        <div
+        <x-category
             data-name="Квартира"
             data-rate="9,2%"
             data-rate-bank="11,75%"
             data-insurance="0,5%"
             data-insurance-bank="0,8%"
-            class="credit-calc-category"
-        ></div>
+        ></x-category>
 
-        <div
-            data-name="Дом"
+        <x-category
+            data-name="Коммерческая недвижимость"
             data-rate="8,2%"
-            data-rate-bank="10,3%"
-            data-insurance="0,5%"
-            data-insurance-bank="0,8%"
-            class="credit-calc-category"
-        ></div>
-    </div>
+            data-rate-bank="11,5%"
+            data-insurance="0,65%"
+            data-insurance-bank="1%"
+        ></x-category>
+    </x-offer>
 </div>
 ```
 
-! Элементы предложений должны содержать class "credit-calc-offer", а вложенных категорий "credit-calc-category"
+Калькулятор только для потребительского кредита
+
+```html
+<div id="credit-calc">
+    <x-offer
+        data-name="Потребительский кредит (можно не писать тк не будет отображаться)"
+        data-commission="10%"
+        data-sum-min="500000"
+        data-sum-max="5000000"
+        data-years-min="1"
+        data-years-max="5"
+        data-rate="12,5%"
+        data-rate-bank="19%"
+        data-insurance="0"
+        data-insurance-bank="9%"
+    ></x-offer>
+</div>
+```
 
 API атрибутов
 

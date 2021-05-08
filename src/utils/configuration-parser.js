@@ -1,7 +1,7 @@
 import { parseNumeric } from "./helpers";
 
-const OFFER_SLOT_CLASS_NAME = "credit-calc-offer";
-const CATEGORY_SLOT_CLASS_NAME = "credit-calc-category";
+const OFFER_SLOT_TAG = "x-offer";
+const CATEGORY_SLOT_TAG = "x-category";
 
 const NAME_ATTR = "data-name";
 const RATE_ATTR = "data-rate";
@@ -25,11 +25,11 @@ const DEFAULT_NAME = "<default>";
  * @param {HTMLElement} root
  */
 export const parseConfiguration = (root) => {
-    const offerSlots = Array.from(root.getElementsByClassName(OFFER_SLOT_CLASS_NAME));
+    const offerSlots = Array.from(root.getElementsByTagName(OFFER_SLOT_TAG));
 
     return offerSlots.map((element) => {
         const offerConfig = parseAttributes(element);
-        const offerCategorySlots = Array.from(element.getElementsByClassName(CATEGORY_SLOT_CLASS_NAME));
+        const offerCategorySlots = Array.from(element.getElementsByTagName(CATEGORY_SLOT_TAG));
         const offerCategories = offerCategorySlots.map((typeEl) => mergeConfigs(offerConfig, parseAttributes(typeEl, false)));
 
         if (offerCategories.length === 0) {

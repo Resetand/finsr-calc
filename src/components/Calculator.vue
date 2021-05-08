@@ -15,6 +15,7 @@
                         :options="withIndex(configuration)"
                         label="name"
                         class="form-control form-control_select"
+                        appendToBody
                     />
                 </div>
             </div>
@@ -32,6 +33,7 @@
                         :options="withIndex(selectedOffer.categories)"
                         label="name"
                         class="form-control form-control_select"
+                        appendToBody
                     />
                 </div>
             </div>

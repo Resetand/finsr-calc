@@ -47,7 +47,7 @@ export default {
         submitInputChange() {
             this.setValue(clamp(this.inputValue, this.min, this.max));
         },
-        
+
         setValue(value) {
             this.$emit("input", value);
         },
@@ -106,6 +106,7 @@ export default {
     padding: 12px 0;
     color: #000;
     width: 100%;
+    z-index: 0;
 }
 
 .numeric-input-group {
