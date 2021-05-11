@@ -51,3 +51,12 @@ export function parseNumeric(value) {
     }
     return parseFloat(purified);
 }
+
+/**
+ * @param {number} a
+ * @param {number} b
+ * @returns number
+ */
+export function timesFloat(a, b) {
+    return Math.round(a * b * 100) / 100;
+}

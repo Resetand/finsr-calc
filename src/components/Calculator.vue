@@ -83,8 +83,8 @@
                 </div>
                 <div class="summary__info-row">
                     <div class="summary__info-col summary__info-col_label">Ставка</div>
-                    <div class="summary__info-col">{{ formatNumber(config.rate * 100) }}%</div>
-                    <div class="summary__info-col">{{ formatNumber(config.rateBank * 100) }}%*</div>
+                    <div class="summary__info-col">{{ formatNumber(timesFloat(config.rate, 100)) }}%</div>
+                    <div class="summary__info-col">{{ formatNumber(timesFloat(config.rateBank, 100)) }}%*</div>
                 </div>
                 <div class="summary__info-row">
                     <div class="summary__info-col summary__info-col_label">Ежемесячный платёж</div>
@@ -93,8 +93,8 @@
                 </div>
                 <div class="summary__info-row">
                     <div class="summary__info-col summary__info-col_label">Страхование</div>
-                    <div class="summary__info-col">{{ formatNumber(config.insurance * 100) }}%</div>
-                    <div class="summary__info-col">{{ formatNumber(config.insuranceBank * 100) }}%</div>
+                    <div class="summary__info-col">{{ formatNumber(timesFloat(config.insurance, 100)) }}%</div>
+                    <div class="summary__info-col">{{ formatNumber(timesFloat(config.insuranceBank, 100)) }}%</div>
                 </div>
             </div>
 
@@ -108,7 +108,7 @@ import MoneyInput from "./MoneyInput.vue";
 import VueSelect from "vue-select";
 import Slider from "./Slider";
 
-import { calcMonthlyPayment, clamp, formatNumber } from "../utils/helpers";
+import { calcMonthlyPayment, clamp, timesFloat, formatNumber } from "../utils/helpers";
 
 export default {
     name: "Calculator",
@@ -126,7 +126,7 @@ export default {
 
     methods: {
         formatNumber,
-
+        timesFloat,
         clampValues() {
             const { sumMin, sumMax, yearsMin, yearsMax } = this.config;
             this.sum = clamp(this.sum, sumMin, sumMax);
