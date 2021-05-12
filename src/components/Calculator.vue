@@ -350,7 +350,8 @@ $vs-controls-size: 0.78;
     font-size: 21px;
     vertical-align: middle;
     text-align: center;
-    padding: 7px 0;
+    padding: 0;
+    min-height: 50px;
     @media screen and (max-width: 500px) {
         font-size: 19px;
     }
@@ -368,9 +369,21 @@ $vs-controls-size: 0.78;
 }
 
 .vs__selected {
-    width: 100%;
+    position: absolute;
+    /* inset: 0 10px; */
+    top: 45%;
+    left: 10px;
+    right: 10px;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
     color: #000;
-    justify-content: center;
-    margin-right: -20px;
+    text-align: center;
+}
+
+.vs__selected-options {
+    position: unset;
 }
 </style>

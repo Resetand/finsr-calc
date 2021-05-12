@@ -103,10 +103,11 @@ export default {
 <style lang="scss" scoped>
 .form-control {
     font-size: 21px;
-    padding: 12px 0;
+    padding: 0;
     color: #000;
     width: 100%;
     z-index: 0;
+    min-height: 50px;
 }
 
 .numeric-input-group {
